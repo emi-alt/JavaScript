@@ -1,0 +1,13 @@
+<html>
+<body>
+    <p id="join"></p>
+    <p id="pop"></p>
+    <p id="pop2"></p>
+    <script>
+        var animals = ["Rabbits", "Bears", "Cats", "Dogs", "Koala", "Hamster"];
+        document.getElementById("join").innerHTML = animals.join(" * ");
+        document.getElementById("pop").innerHTML = animals; animals.pop();
+        document.getElementById("pop2").innerHTML = animals;
+    </script>
+</body>
+</html>
