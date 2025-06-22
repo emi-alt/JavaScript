@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <p id="details"></p>
+        <script>
+            class car {
+                constructor(Brand) {
+                    this.carname = Brand;
+                }
+                present() {
+                    return "I have a " + this.carname
+                }
+            }
+            class modal extends car {
+                constructor (Brand, mod) {
+                    super(Brand);
+                    this.modal = mod;
+                }
+                show(){
+                    return this.present() + "I have a " +  this.modal;
+
+                }
+            }
+            let myCar = new modal ("Ford", "Audi");
+            document.getElementById("details").innerHTML = myCar.show();
+        </script>
+    </body>
+</html>
