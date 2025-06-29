@@ -1,0 +1,18 @@
+<html>
+<body>
+    <p id="result"></p>
+    <button onclick="myfunction()">Answer</button>
+    <script>
+        function myfunction() {
+            var x = 30;
+            var y = 15;
+            var a = eval ("x + y") + "<br>"
+            var b = eval ("50 + x - y") + "<br>"
+            var c = eval ("9.87 - x + y") + "<br>"
+            
+            var res = a + b + c;
+            document.getElementById("result").innerHTML = res + a + b + c
+        }
+    </script>
+</body>
+</html>
