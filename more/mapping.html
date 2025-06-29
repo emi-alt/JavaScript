@@ -1,0 +1,15 @@
+<html>
+<body>
+    <h2>Mapping</h2>
+    <p id="result"></p>
+    <script>
+        var num = [30, 78, 89.9, 75, 48, 4, 0, 12];
+
+        function myfunction(num) {
+            return num * 10;
+        }
+        var newarray = num.map(myfunction);
+        document.getElementById("result").innerHTML= newarray;
+    </script>
+</body>
+</html>
