@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <p id="error"></p>
+
+        <script>
+            try {
+                addalert("welcome!");
+            }
+            catch(err) {
+                document.getElementById("error").innerHTML = err.message;
+            }
+        </script>
+    </body>
+</html>
