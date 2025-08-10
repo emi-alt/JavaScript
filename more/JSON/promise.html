@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <p id="result"></p>
+
+        <script>
+            function myDisplayer(some) {
+                document.getElementById("result").innerHTML = some;
+            }
+
+            function sum(num1, num2) {
+                var sum = num1 + num2;
+                myDisplayer(sum);
+            }
+
+            let mypromise = new Promise((resolve, reject) => {
+                let x = 0 
+                if (x == 0 ) {
+                    resolve("success");
+                }
+
+                else {
+                    reject("error");
+                }
+
+                mypromise.then (
+                    function (success) {sum(5, 5)},
+                    function (error) {sum("error")}
+            )
+            })
+        </script>
+    </body>
+</html>
